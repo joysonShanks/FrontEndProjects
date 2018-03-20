@@ -1,14 +1,16 @@
 
 <div class="login-centre">
-  <form class="login-form">
+  <form class="login-form"
+  #gallerylogin [fieldsValidation]="customValidation">
     <mat-form-field class="login-full-width">
       <input matInput placeholder="User Name">
     </mat-form-field>
     <mat-form-field class="login-full-width">
-      <input matInput placeholder="Password">
+      <input matInput placeholder="Password" type="password">
     </mat-form-field>
     <div class="login-button-row">
-      <button mat-raised-button color="primary" class="login-button-width">Login</button>
+      <button mat-raised-button color="primary" class="login-button-width"
+        (click)="goToGallery()">Login</button>
     </div>
   </form>
 </div>

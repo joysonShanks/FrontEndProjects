@@ -9,10 +9,10 @@ const baseUrl = "https://homepages.cae.wisc.edu/~ece533/images/";
 })
 export class GalleryComponent implements OnInit {
   tiles = [
-    {text: 'Airplane', cols: 3, rows: 1, color: 'lightblue', url: baseUrl + 'airplane.png'},
-    {text: 'Architecture', cols: 1, rows: 2, color: 'lightgreen', url: baseUrl + 'arctichare.png'},
+    {text: 'Airplane', cols: 1, rows: 1, color: 'lightblue', url: baseUrl + 'airplane.png'},
+    {text: 'Architecture', cols: 1, rows: 1, color: 'lightgreen', url: baseUrl + 'arctichare.png'},
     {text: 'Baboon', cols: 1, rows: 1, color: 'lightpink', url: baseUrl + 'baboon.png'},
-    {text: 'Boat', cols: 2, rows: 1, color: '#DDBDF1', url: baseUrl + 'boat.png'},
+    {text: 'Boat', cols: 1, rows: 1, color: '#DDBDF1', url: baseUrl + 'boat.png'},
   ];
   
   constructor() { }

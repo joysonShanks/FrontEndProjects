@@ -1,9 +1,11 @@
-<mat-grid-list cols="4" rowHeight="100px">
+<mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile
       *ngFor="let tile of tiles"
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color">
-    <img src={{tile.url}}>
+    <mat-grid-tile-header>Images Header</mat-grid-tile-header>
+    <img src={{tile.url}} style="max-width:100%;max-height:100%;">
+    <mat-grid-tile-footer>Images footer</mat-grid-tile-footer>
   </mat-grid-tile>
 </mat-grid-list>
